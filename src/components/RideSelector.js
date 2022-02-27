@@ -6,9 +6,9 @@ import {carList} from  "/src/components/CarList";
 
 export const ConfirmButton = ({show,hide}) => {
   return (
-    <section className={`after:h-screen after:z-[1000] after:w-screen after:fixed after:content-[''] after:bg-black after:opacity-60 fixed top-0 left-0 h-screen w-screen flex flex-col justify-center items-center ${!show && 'hidden'}`}>
+    <section className={`after:h-screen after:z-[1000] after:w-screen after:fixed after:content-[''] after:bg-black after:opacity-60 fixed top-0 left-0 h-screen w-screen p-7 flex flex-col justify-center items-center ${!show && 'hidden'}`}>
       
-      <div className="w-1/2 bg-white rounded-2xl p-7 space-y-5 relative z-[2000]">
+      <div className="md:w-1/2 bg-white rounded-2xl p-7 space-y-5 relative z-[2000]">
         <h2 className="text-xl font-bold">Fare Expired</h2>
 
         <div>Your fare has expired. Please refresh your fare before requesting a ride.</div>
