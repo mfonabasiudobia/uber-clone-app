@@ -56,16 +56,21 @@ const Home = (props) => {
              </button>
             </Link>
 
+            <Link href="search">
              <button className={styles.actionButton}>
                <img src="https://i.ibb.co/n776JLm/bike.png" className="h-3/5 " />
                <span>Wheels</span>
              </button>
+            </Link>
 
+            <Link href="search">
              <button className={styles.actionButton}>
                <img src="https://i.ibb.co/5RjchBg/uberschedule.png" className="h-3/5 " />
                <span>Reserve</span>
              </button>
+            </Link>
            </div>
+           
 
            <div className="h-20 bg-gray-100 rounded-lg text-2xl p-4 flex items-center">
               <h2>Where to?</h2>

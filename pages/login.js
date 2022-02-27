@@ -18,9 +18,9 @@ const Login = () => {
 
   return (
    <div className="page-wrapper bg-gray-200 flex flex-col justify-center items-center bg-white space-y-4 overflow-y-auto spaxe-y-5">
-          <div className="px-5 space-y-5 md:w-2/5 bg-white p-7 shadow rounded-2xl">
+          <div className="flex-1 md:flex-none px-5 space-y-5 md:w-2/5 bg-white p-7 shadow rounded-2xl">
             
-            <div classNamaw>
+            <div className="flex justify-center">
               <img src="https://i.ibb.co/n6LWQM4/Post.png" className="block h-10" alt="Logo" />
             </div>
             
@@ -32,6 +32,9 @@ const Login = () => {
                  Sign In with Google
               </button>
             </div>
+
+
+            <p className="text-xs text-center">&copy; Powered By <a href="https://www.linkedin.com/in/mfonabasi-udobia-a84128217" target="_blank">MfonAbasi Udobia</a> </p>
           </div>
      </div>
 

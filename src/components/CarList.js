@@ -20,8 +20,23 @@ export const carList = [
     multiplier: 1.2,
   },
   {
-    imgUrl: ' https://i.ibb.co/1nStPWT/uberblacksuv.png',
+    imgUrl: 'https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/v1.1/BlackSUV_v1.png',
     service: 'Black SUV',
     multiplier: 2.8,
+  },
+   {
+    imgUrl: 'https://i.ibb.co/1nStPWT/uberblacksuv.png',
+    service: 'Black',
+    multiplier: 3,
+  },
+  {
+    imgUrl: 'https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/v1.1/Lux_v1.png',
+    service: 'Lux',
+    multiplier: 2,
+  },
+  {
+    imgUrl: 'https://d1a3f4spazzrp4.cloudfront.net/car-types/haloProductImages/v1.1/WAV_v1.png',
+    service: 'WAVE',
+    multiplier: 1.2,
   }
 ]

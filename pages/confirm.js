@@ -4,6 +4,24 @@ import {useRouter} from "next/router";
 import Map from "/src/components/Map";
 import RideSelector from "/src/components/RideSelector";
 
+
+export const ConfirmButton = ({show,hide}) => {
+  return (
+    <section className={`after:h-screen after:w-screen after:content-[''] after:bg-black after:opacity-60 fixed top-0 left-0 min-h-[100vh] bg-red-100 w-screen flex flex-col justify-center items-center z-50 ${!show && 'hidden'}`}>
+      
+      <div className="w-1/2 bg-white rounded-2xl p-10">
+        <h2>Fare Expired</h2>
+
+        <div>Your fare has expired. Please refresh your fare before requesting a ride.</div>
+
+
+        <button className="bg-black w-full text-center text-white py-2" onClick={() => hide()}>Cancel</button>
+      </div>
+  </section>)
+}
+
+
+
 const Confirm = (props) => {
 
   const [pickupCoordinate,setPickupCoordinate] = useState([0, 0]);
@@ -51,7 +69,7 @@ const Confirm = (props) => {
   return (
     <div className="page-wrapper flex flex-col">
 
-      <div className="fixed top-5 left-5 bg-white shadow-lg rounded-full z-50 h-10 w-10 flex items-center justify-center">
+      <div className="fixed top-5 left-5 bg-white shadow-lg rounded-full z-20 h-10 w-10 flex items-center justify-center">
         <Link href="/search">
           <button><i className="fas fa-arrow-left"></i></button>
         </Link>
