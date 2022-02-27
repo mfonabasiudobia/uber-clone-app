@@ -1,0 +1,20 @@
+
+
+.container {
+  @apply  h-screen flex flex-col;
+}
+
+.map {
+  @apply flex-1;
+}
+
+
+.start {
+  @apply flex-1;
+}
+
+
+.actionButton {
+  @apply rounded-lg  transition text-xl bg-gray-200 flex-1 h-32 border flex flex-col items-center justify-center space-y-2 hover:scale-105;
+}
+
