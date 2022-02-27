@@ -24,17 +24,16 @@ const RideSelector = ({pickupCoordinate,dropOffCoordinate}) => {
   const [selected,setSelected] = useState(0);
   const [show,setShow] = useState(false);
 
+  const {NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN} = process.env;
+
   useEffect(() => {
 
     //Calculate the distance between two points
-    fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinate[0]},${pickupCoordinate[1]};${dropOffCoordinate[0]},${dropOffCoordinate[1]}?access_token=pk.eyJ1IjoibWJyYWluIiwiYSI6ImNsMDNtMm9vczA4dDcza3BkYnVlajg0NmkifQ.7fT2s42CFsD1wNTQpZi-7g`)
+    fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinate[0]},${pickupCoordinate[1]};${dropOffCoordinate[0]},${dropOffCoordinate[1]}?access_token=${NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}`)
     .then((res) => res.json())
     .then((res) => {
 
-
       setRideduration(res.routes[0].duration / 100);
-
-
 
     })
     .catch((err) => console.log(err.message))

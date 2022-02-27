@@ -1,7 +1,9 @@
 import {useEffect} from "react";
 import mapboxgl from "!mapbox-gl";
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWJyYWluIiwiYSI6ImNsMDNtMm9vczA4dDcza3BkYnVlajg0NmkifQ.7fT2s42CFsD1wNTQpZi-7g';
+const {NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN} = process.env;
+
+mapboxgl.accessToken = NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
 
 const Home = ({pickupCoordinate,dropOffCoordinate}) => {
 
